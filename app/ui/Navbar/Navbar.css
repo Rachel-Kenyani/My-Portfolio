@@ -1,0 +1,49 @@
+.navbar{
+    box-shadow: -2px -3px 1px #FAFAFC, 4px 3px 3px #f7f7fb;
+}
+.text {
+  color: #898486;
+  transition: 0.3s ease-in-out;
+}
+.toggle {
+  background-color: #fdfdff;
+  box-shadow: inset -1px -1px 11px #F6F6FF, inset 2px 2px 2px #929c9d;
+  transition: 0.3s ease-in-out;
+}
+.toggle i {
+  z-index: 2;
+  transition: 0.3s ease-in-out;
+}
+.toggle i:first-child {
+  color: white;
+}
+.toggle i:last-child {
+    color: #ACAAAA;
+}
+.background {
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  transition: 0.3s ease-in-out;
+  background: linear-gradient(to bottom, #dc923b9e, #dc923b);
+  box-shadow: -1px 0px 2.5px #dc923b, 1px 0px 2.5px #a8b4b5;
+}
+
+.toggle-switch:checked ~ .text {
+  color: white;
+}
+.toggle-switch:checked ~ .toggle {
+  background-color: #000000;
+  box-shadow: inset -2px -2px 2.5px #454a4b, inset 3px 3px 2px #0000;
+}
+.toggle-switch:checked ~ .toggle i:first-child {
+  color: #ACAAAA;
+}
+.toggle-switch:checked ~ .toggle i:last-child {
+  color: white;
+}
+.toggle-switch:checked ~ .toggle .background {
+  transform: translateX(3.6rem);
+  background: linear-gradient(to bottom, #2f2f4b, #000000);
+  box-shadow: -1px 0px 2.5px #2f2f4b, 1px 0px 2.5px #454a4b;
+}
